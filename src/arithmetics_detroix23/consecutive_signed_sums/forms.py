@@ -3,6 +3,7 @@
 /src/arithmetics_detroix23/consecutive_signed_sums/forms.py
 """
 
+import pathlib
 import pprint
 
 def binary_combinations(
@@ -56,16 +57,34 @@ def format_signs(bits: list[bool]) -> str:
 	"""
 	Format a `list` of `bool` to [-1](False) and [1](True)
 	"""
-	return " + ".join([(f"(+1)✕{i}" if sign else f"(-1)✕{i}") for i, sign in enumerate(bits, 1)])
+	return " ".join([(f"+ {i}" if sign else f"- {i}") for i, sign in enumerate(bits, 1)])
 
 def format_all_combinations(result: dict[int, list[list[bool]]]) -> str:
 	lines: list[str] = []
 	for integer, combinations in result.items():
-		lines.append(f"• {integer}")
+		lines.append(f"r = {integer}")
 		for combination in combinations:
 			lines.append(f"  = {format_signs(combination)}")
 
 	return "\n".join(lines)
+
+def save_all_combinations(n: int) -> None:
+	"""
+	Procedure to display and save the combinations to a file.
+	"""
+	result = all_combinations(n)
+	result_formatted = format_all_combinations(result)
+	path = pathlib.Path(f"./results/consecutive_signed_sums_all{n}.txt")
+	with open(path, "w") as file:
+		file.write(result_formatted)
+	
+	if len(result_formatted) > 10_000:
+		print(f"(!) Result to long ({len(result_formatted)}) to be printed.")
+	else:
+		print(result_formatted)
+	print(f"\nSaved under `{path}`.")
+
+
 
 def main() -> None:
 	"""
@@ -83,8 +102,7 @@ def main() -> None:
 	print(b4, len(b4))
 
 	print("## Forms.")
-	f = all_combinations(5)
-	print(format_all_combinations(f))
+	save_all_combinations(16)
 
 	
 
