@@ -84,8 +84,6 @@ def save_all_combinations(n: int) -> None:
 		print(result_formatted)
 	print(f"\nSaved under `{path}`.")
 
-
-
 def main() -> None:
 	"""
 	Main testing for consecutive signed sums.
@@ -103,7 +101,3 @@ def main() -> None:
 
 	print("## Forms.")
 	save_all_combinations(16)
-
-	
-
-

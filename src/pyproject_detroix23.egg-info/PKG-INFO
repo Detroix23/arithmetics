@@ -11,4 +11,10 @@ Classifier: Natural Language :: English
 Requires-Python: >=3.12
 Description-Content-Type: text/markdown
 License-File: LICENSE.md
+Requires-Dist: matplotlib
 Dynamic: license-file
+
+# Arithmetics.
+
+Solve, illustrate different problems about digits, enumeration, discrete calculus.
+

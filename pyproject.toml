@@ -1,7 +1,7 @@
 [project]
-name = "pyproject_detroix23"
+name = "arithmetics_detroix23"
 version = "0.1.0"
-description = "Pyproject generated."
+description = "Solve discrete and arithmetic problems."
 authors = [
     { name="Detroix23", email="detroix23@gmail.com" }
 ]
@@ -12,13 +12,15 @@ classifiers = [
     "Operating System :: OS Independent",
     "Natural Language :: English",
 ]
-dependencies = []
+dependencies = [
+    "matplotlib"
+]
 
 license = "CC-BY-4.0"
 license-files = ["LICENSE.md"]
 
 [project.urls]
-Repository = "https://github.com/Detroix23/"
+Repository = "https://github.com/Detroix23/arithmetics"
 
 [build-system]
 requires = ["setuptools"]

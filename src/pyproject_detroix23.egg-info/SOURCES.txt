@@ -5,7 +5,13 @@ src/arithmetics_detroix23/__init__.py
 src/arithmetics_detroix23/__main__.py
 src/arithmetics_detroix23/consecutive_signed_sums/__init__.py
 src/arithmetics_detroix23/consecutive_signed_sums/forms.py
+src/arithmetics_detroix23/digital_counters/__init__.py
+src/arithmetics_detroix23/digital_counters/base10.py
+src/arithmetics_detroix23/digital_counters/counter.py
+src/arithmetics_detroix23/digital_counters/romans.py
+src/arithmetics_detroix23/digital_counters/tests.py
 src/pyproject_detroix23.egg-info/PKG-INFO
 src/pyproject_detroix23.egg-info/SOURCES.txt
 src/pyproject_detroix23.egg-info/dependency_links.txt
+src/pyproject_detroix23.egg-info/requires.txt
 src/pyproject_detroix23.egg-info/top_level.txt
