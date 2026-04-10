@@ -13,7 +13,8 @@ classifiers = [
     "Natural Language :: English",
 ]
 dependencies = [
-    "matplotlib"
+    "numpy",
+    "matplotlib",
 ]
 
 license = "CC-BY-4.0"

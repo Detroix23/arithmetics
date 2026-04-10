@@ -5,7 +5,7 @@
 
 from matplotlib import pyplot, ticker
 
-from arithmetics_detroix23.digital_counters import base10
+from arithmetics_detroix23.shared import base10
 
 def counter_numerical_raw(start: int, stop: int) -> dict[int, int]:
 	"""
