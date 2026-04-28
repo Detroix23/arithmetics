@@ -7,6 +7,7 @@ from arithmetics_detroix23 import (
 	digital_counters, 
 	consecutive_signed_sums,
 	predators_prays,
+	dividers
 )
 
 def main() -> None:
@@ -21,6 +22,12 @@ def main() -> None:
 	# consecutive_signed_sums.forms.main()
 
 	# Prays and predators.
-	predators_prays.tests.capes1()
+	# predators_prays.tests.capes1()
+
+	# Dividers, GCP, primes.
+	dividers.tests.euclid_result1()
+	dividers.tests.gcd_scatter()
+	dividers.tests.gcd_study1()
+
 
 main()

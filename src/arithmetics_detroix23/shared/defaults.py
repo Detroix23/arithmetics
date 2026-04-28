@@ -5,17 +5,19 @@
 
 from typing import Callable 
 
-Real = float | int
+import numpy
 
+
+Real = float | int
 FunctionReal = Callable[[float], float]
 """
 f: R → R
 """
-
-
 FunctionReal2 = Callable[[float, float], float]
 """
 f: (R×R) → R
 """
+IntegerArray = numpy.ndarray[tuple[int], numpy.dtype[numpy.int32]]
+RealArray = numpy.ndarray[tuple[int], numpy.dtype[numpy.float64]]
 
-__all__: list[str] = ["Real", "FunctionReal", "FunctionReal2"]
+__all__: list[str] = ["Real", "FunctionReal", "FunctionReal2", "IntegerArray"]
