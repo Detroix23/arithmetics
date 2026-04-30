@@ -7,7 +7,8 @@ from arithmetics_detroix23 import (
 	digital_counters, 
 	consecutive_signed_sums,
 	predators_prays,
-	dividers
+	dividers,
+	conway_sequence,
 )
 
 def main() -> None:
@@ -25,9 +26,11 @@ def main() -> None:
 	# predators_prays.tests.capes1()
 
 	# Dividers, GCP, primes.
-	dividers.tests.euclid_result1()
-	dividers.tests.gcd_scatter()
-	dividers.tests.gcd_study1()
+	#dividers.tests.euclid_result1()
+	#dividers.tests.gcd_scatter()
+	#dividers.tests.gcd_study1()
 
+	# Conway sequence.
+	conway_sequence.tests.compress1()
 
 main()

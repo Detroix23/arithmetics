@@ -20,8 +20,8 @@ GCD studies:
 
 ![Scatter 1](docs/GCD_Scatter1.png)
 
-- Measuring, for up to $n$, average $d(n)$, frequency $f_1$ for $GCD(a, b) = 1$. It looks like:
-	- $f_1 → 0.60$
+- Measuring, for up to $n$, average $d(n)$, frequency $f_1(n)$ for $GCD(a, b) = 1$. It looks like:
+	- $f_1(n) → 0.60$
 	- $d(n) → ln(n)$
 
 ![Statistics 1](docs/GCD_Statistics1.png)

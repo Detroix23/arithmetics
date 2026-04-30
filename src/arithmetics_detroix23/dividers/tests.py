@@ -17,6 +17,9 @@ def euclid_result1() -> None:
 	print(gcd.euclid(24, 6))
 	print(gcd.euclid(9, 6))
 	print(gcd.euclid(3500, 31230))
+	print(gcd.euclid(93, 39))
+
+	print(gcd.euclid_remainders(93, 39))
 
 def gcd_study1() -> None:
 	print("\n## Test: GCD study 1.")
