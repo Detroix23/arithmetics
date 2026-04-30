@@ -52,6 +52,8 @@ def run_with_arguments(arguments: list[str]) -> None:
 
 	elif arguments[1] in {"cs", "conway"}:
 		conway_sequence.tests.compress1()
+		conway_sequence.tests.sequence1
+		conway_sequence.tests.count_over_start1()
 
 	else:
 		print("Incorrect <script> at position 1.")

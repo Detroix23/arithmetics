@@ -37,6 +37,45 @@ class ConwaySequence:
 	
 		return self.history
 
+	def length_average(self) -> float:
+		"""
+		Average length of all values **l_n**.
+		"""
+		length_sum: int = 0
+		for value in self.history:
+			length_sum += len(str(value))
+
+		return length_sum / len(self.history)
+
+	def digit_count(self) -> dict[str, tuple[int, float]]:
+		"""
+		Returns a dictionary:
+		- keys: `str`, digit ("total" special case);
+		- values: `tuple[int, float]`, (count, frequency);
+		"""
+		counts: dict[str, int] = {
+			"1": 0,
+			"2": 0,
+			"3": 0,
+			"total": 0
+		}
+
+		for number in self.history:
+			string = str(number)
+			for digit in string:
+				if digit in counts.keys():
+					counts[digit] += 1
+				else:
+					counts[digit] = 0
+			counts["total"] += len(string)
+					
+		frequency: dict[str, float] = {
+			digit: count / counts["total"] for digit, count in counts.items()
+		}
+
+		concatenated = {digit: (counts[digit], frequency[digit]) for digit in counts.keys()}
+		return concatenated
+
 
 def compress(number: int) -> int:
 	"""
