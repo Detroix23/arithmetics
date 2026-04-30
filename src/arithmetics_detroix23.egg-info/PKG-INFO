@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: arithmetics_detroix23
+Version: 0.1.0
+Summary: Solve discrete and arithmetic problems.
+Author-email: Detroix23 <detroix23@gmail.com>
+License-Expression: CC-BY-4.0
+Project-URL: Repository, https://github.com/Detroix23/arithmetics
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Dynamic: license-file
+
+# Arithmetics.
+
+Solve, illustrate different problems about digits, enumeration, discrete calculus.
+
+With Python, here, are ran smaller problems or that are easy to visualize.
+See [Rust repository](https://github.com/Detroix23/arithmetics_rs) for computation of very large numbers.
+
+## Consecutive signed sums.
+From the _Concours General de Mathématiques des Lycées 2026_.
+
+## Digital counters.
+Simulate counters, in base 10 and in roman numbers.
+
+Try to find the best combination for the minimal counter.
+
+## Dividers and GCD.
+
+GCD studies: 
+- Plotting the $ℕ×ℕ$ plane.
+
+![Scatter 1](docs/GCD_Scatter1.png)
+
+- Measuring, for up to $n$, average $d(n)$, frequency $f_1(n)$ for $GCD(a, b) = 1$. It looks like:
+	- $f_1(n) → 0.60$
+	- $d(n) → ln(n)$
+
+![Statistics 1](docs/GCD_Statistics1.png)
